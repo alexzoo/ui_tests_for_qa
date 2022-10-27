@@ -30,8 +30,8 @@ class PracticePage:
         return self
 
     def fill_name(self, firstname: str, lastname: str):
-        browser.element('#firstname').type(firstname)
-        browser.element('#lastname').type(lastname)
+        browser.element('#firstName').type(firstname)
+        browser.element('#lastName').type(lastname)
         return self
 
     def fill_email(self, value: str):
@@ -44,7 +44,7 @@ class PracticePage:
 
     def fill_subjects(self, *subjects: str):
         for item in subjects:
-            browser.element('subjectsInput').type(item).press_enter()
+            browser.element('#subjectsInput').type(item).press_enter()
         return self
 
     def fill_address(self, address: str):

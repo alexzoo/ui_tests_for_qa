@@ -4,8 +4,8 @@ from selene import have
 from selene.support.conditions.have import *  # noqa
 from selene.support.conditions.be import *  # noqa
 
-import demoqa_tests
+import ui
 
 
 def date(value: datetime.date):  # noqa
-    return have.value(value.strftime(demoqa_tests.config.datetime_input_format))
+    return have.value(value.strftime(ui.config.datetime_input_format))
